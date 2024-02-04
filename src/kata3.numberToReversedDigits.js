@@ -1,3 +1,6 @@
-const numberToReversedDigits = number => {};
-
-module.exports = numberToReversedDigits;
+function numberToReversedDigits(number) {
+    return String(number).split('').reverse().map(Number);
+}
+  
+  module.exports = { numberToReversedDigits };
+  

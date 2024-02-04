@@ -1,3 +1,7 @@
-const getEmployerRole = (employeeName, employees) => {};
-
-module.exports = getEmployerRole;
+function getEmployerRole(employeeName, employees) {
+    const employee = employees.find(emp => emp.name === employeeName);
+    return employee ? employee.role : undefined;
+}
+  
+  module.exports = { getEmployerRole };
+  
